@@ -1,14 +1,11 @@
-const express = require('express');
-const { port } = require('./config');
+const app = require('./app');
 
-const app = express();
+const PORT = process.env.PORT || 8000;
 
-app.get('/', (req, res) => res.send('Express server is up and running!'));
-
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
   if (err) {
     console.error(err);
   } else {
-    console.log(`Express server listening on ${port}`);
+    console.log(`Express server listening on ${PORT}`);
   }
 });
