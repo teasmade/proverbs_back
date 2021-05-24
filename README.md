@@ -3,7 +3,7 @@
 This template provides:
 
 - A basic Express app in `index.js`
-- `dotenv`, a sample env file (`.env.sample`) and a `config.js` file to export config variables
+- `dotenv`, a sample env file (`.env.sample`)
 - ESLint with Airbnb rules
 - Prettier
 - Automatic linting on commit: **you can't commit if you have ESLint errors**
