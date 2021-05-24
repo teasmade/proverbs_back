@@ -2,7 +2,7 @@
 
 This template provides:
 
-- A basic Express app in `index.js`
+- A basic Express app in `app.js`
 - `dotenv`, a sample env file (`.env.sample`)
 - ESLint with Airbnb rules
 - Prettier
