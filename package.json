@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config index",
-    "dev": "nodemon -r dotenv/config index.js",
+    "start": "node -r dotenv/config src/app.js",
+    "dev": "nodemon -r dotenv/config src/app.js",
     "lint": "./node_modules/.bin/eslint --ext .js",
     "test": "DB_NAME=databasename_test jest",
     "test:watch": "DB_NAME=databasename_test jest --watch"
