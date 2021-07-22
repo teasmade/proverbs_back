@@ -24,7 +24,6 @@ router.get('/', (req, res) => {
 // create one proverb
 router.post('/', (req, res) => {
   const { orig_lang, proverb_text, proverb_date, proverb_author } = req.body;
-  console.log(orig_lang);
   const sql =
     'INSERT INTO proverb(orig_lang, proverb_text, proverb_date, proverb_author) VALUES (?, ?, ?, ?)';
   connection.query(
