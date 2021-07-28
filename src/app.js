@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const api = require('./routes');
 
 require('dotenv').config();
 
@@ -8,6 +9,8 @@ const app = express();
 app.use(express.json());
 // TODO: configure cors
 app.use(cors());
+
+app.use('/api', api);
 
 app.get('/test', (req, res) => {
   res.status(200).send('Proverbs backend test OK');
